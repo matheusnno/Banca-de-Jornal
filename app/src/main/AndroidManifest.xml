@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="matheus.bancajornal">
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/newspaper"
+        android:label="Banca de Jornal"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LoginActivity" android:configChanges="orientation" android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CadastroActivity" android:configChanges="orientation" android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".CadastroFuncActivity" android:configChanges="orientation" android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".BarCodeActivity" android:configChanges="orientation" android:screenOrientation="portrait"/>
+        <activity android:name=".CadastroProdutoActivity" android:configChanges="orientation" android:screenOrientation="portrait"/>
+        <activity android:name=".VendaActivity" android:configChanges="orientation" android:screenOrientation="portrait"/>
+        <activity android:name=".RemoverVendaActivity" android:configChanges="orientation" android:screenOrientation="portrait"/>
+        <activity android:name=".LucroActivity" android:configChanges="orientation" android:screenOrientation="portrait" />
+
+
+    </application>
+
+</manifest>

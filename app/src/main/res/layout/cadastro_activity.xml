@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:hint="Cadastrar"
+        android:id="@+id/BtnCadastrar"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="270dp"
+        android:layout_marginTop="61dp"
+        android:layout_below="@+id/senhaCadastro"
+        android:layout_centerHorizontal="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tipo_usuario"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dialog"
+        android:layout_below="@+id/telefoneCadastro"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="54dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textCapWords"
+        android:hint="Nome"
+        android:ems="10"
+        android:id="@+id/nomeCadastro"
+        android:capitalize="words"
+        android:singleLine="true"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="87dp"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/emailCadastro"
+        android:hint="e-mail"
+        android:capitalize="none"
+        android:singleLine="true"
+        android:layout_below="@+id/nomeCadastro"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="47dp"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/telefoneCadastro"
+        android:hint="Telefone"
+        android:phoneNumber="true"
+        android:digits="0123456789+"
+        android:singleLine="true"
+        android:layout_below="@+id/emailCadastro"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="45dp"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/usuarioCadastro"
+        android:hint="Usuário"
+        android:singleLine="true"
+        android:capitalize="none"
+        android:layout_below="@+id/tipo_usuario"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="45dp"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/senhaCadastro"
+        android:hint="Senha"
+        android:password="true"
+        android:capitalize="none"
+        android:singleLine="true"
+        android:layout_below="@+id/usuarioCadastro"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="45dp"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cadastro de Novo Usuário"
+        android:id="@+id/textView"
+        android:textStyle="bold"
+        android:textSize="35dp"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="47dp"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
